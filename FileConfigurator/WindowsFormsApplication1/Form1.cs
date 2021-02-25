@@ -254,10 +254,17 @@ namespace WindowsFormsApplication1
         private void button1_Click(object sender, EventArgs e)
         {
             ReadMaevexSetting();
+            GetDynamicFile();
         }
 
+       public void  GetDynamicFile()
+       {
+           string path = Environment.CurrentDirectory.ToString();
 
-     
+          path = path.Replace("\\bin\\Debug", "");
+
+           path = path + "\\configFile.xml";
+       }
         
     }
 }
