@@ -33,15 +33,13 @@
             this.AmazonReplay = new System.Windows.Forms.RadioButton();
             this.tabControlMain = new System.Windows.Forms.TabControl();
             this.Screen = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.Disco = new System.Windows.Forms.TabPage();
             this.Network = new System.Windows.Forms.TabPage();
             this.DataBase = new System.Windows.Forms.TabPage();
             this.Assets = new System.Windows.Forms.TabPage();
             this.Misilinious = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControlMain.SuspendLayout();
-            this.Screen.SuspendLayout();
             this.SuspendLayout();
             // 
             // AmazonConsole
@@ -104,8 +102,6 @@
             // 
             // Screen
             // 
-            this.Screen.Controls.Add(this.label2);
-            this.Screen.Controls.Add(this.label1);
             this.Screen.Location = new System.Drawing.Point(4, 22);
             this.Screen.Name = "Screen";
             this.Screen.Padding = new System.Windows.Forms.Padding(3);
@@ -114,26 +110,6 @@
             this.Screen.Text = "Screen";
             this.Screen.UseVisualStyleBackColor = true;
             this.Screen.Click += new System.EventHandler(this.Screen_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(940, 25);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "utaiba";
-            this.label2.Visible = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(940, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(26, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Bilal";
-            this.label1.Visible = false;
             // 
             // Disco
             // 
@@ -184,12 +160,23 @@
             this.Misilinious.Text = "Misilinious";
             this.Misilinious.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(650, 20);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Load";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(1031, 474);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.tabControlMain);
             this.Controls.Add(this.AmazonReplay);
             this.Controls.Add(this.AmazonServer);
@@ -198,8 +185,6 @@
             this.Text = "File Configurator";
             this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.tabControlMain.ResumeLayout(false);
-            this.Screen.ResumeLayout(false);
-            this.Screen.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -222,8 +207,7 @@
         private System.Windows.Forms.TabPage Assets;
         private System.Windows.Forms.TabPage Misilinious;
         public System.Windows.Forms.TabControl tabControlMain;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
     }
 }
 

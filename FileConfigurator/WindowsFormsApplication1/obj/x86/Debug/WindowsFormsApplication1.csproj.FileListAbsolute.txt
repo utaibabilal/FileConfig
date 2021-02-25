@@ -14,3 +14,11 @@ D:\Air univeristy\File-Configurator\FileConfigurator\WindowsFormsApplication1\ob
 D:\Air univeristy\File-Configurator\FileConfigurator\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
 D:\Air univeristy\File-Configurator\FileConfigurator\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
 D:\Air univeristy\File-Configurator\FileConfigurator\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+D:\Bilal Git\FileConfig\FileConfigurator\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+D:\Bilal Git\FileConfig\FileConfigurator\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+D:\Bilal Git\FileConfig\FileConfigurator\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+D:\Bilal Git\FileConfig\FileConfigurator\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+D:\Bilal Git\FileConfig\FileConfigurator\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+D:\Bilal Git\FileConfig\FileConfigurator\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+D:\Bilal Git\FileConfig\FileConfigurator\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\Bilal Git\FileConfig\FileConfigurator\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache

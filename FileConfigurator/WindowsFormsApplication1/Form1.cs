@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Xml.Linq;
-
+using System.Xml;
 namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
@@ -46,29 +46,6 @@ namespace WindowsFormsApplication1
             
         }
 
-        //public void ReadXMLFile()
-        //{
-            
-        //    XElement xtr = XElement.Load("D:\\Amazonserver.xml");
-
-        //   IEnumerable<XElement>  screen =xtr.Elements();
-
-        //   foreach (var screens in screen)
-        //   {
-        //       string strArtribute = screens.ToString();
-        //   }
-
-
-            
-
-           
-
-        //}
-
-
-/// <summary>
-/// /set this function   
-/// </summary>
 
         public void ReadXmlFileUsingXDocument(String strSection)
         {
@@ -96,6 +73,37 @@ namespace WindowsFormsApplication1
             }
 
             
+        }
+
+
+
+        public void ReadMaevexSetting()
+        {
+           
+            XmlDocument doc = new XmlDocument();
+            XmlNamespaceManager namespaces = new XmlNamespaceManager(doc.NameTable);
+            namespaces.AddNamespace("ns", "urn:hl7-org:v3");
+            doc.Load("D:\\Amazonserver.xml");
+            XmlNode idNode = doc.SelectSingleNode("/office/Maevex", namespaces);
+            XmlNode desiredNode = null;
+            if (idNode.HasChildNodes)
+            {
+               foreach (XmlNode childNode in idNode.ChildNodes)
+               {
+                  string str =  childNode.Name.ToString();
+
+                  if (str == "view2")
+                  {
+                      desiredNode = childNode;
+                  }
+               }
+               if (desiredNode != null)
+               {
+                   idNode.RemoveChild(desiredNode);
+               }
+            }
+
+            doc.Save(@"D:\\Amazonserver.xml");
         }
 
         public void PopulateResourcesOnDialog(string strName , string strValue , string strCtrlType)
@@ -255,7 +263,6 @@ namespace WindowsFormsApplication1
             }
         }
 
-
         public void GetControl()
         {
             Label lbl = null;
@@ -277,9 +284,13 @@ namespace WindowsFormsApplication1
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ReadMaevexSetting();
+        }
 
-       
 
+     
         
     }
 }
