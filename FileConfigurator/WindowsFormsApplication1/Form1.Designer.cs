@@ -53,7 +53,6 @@
             this.AmazonConsole.TabStop = true;
             this.AmazonConsole.Text = "AmazonConsole";
             this.AmazonConsole.UseVisualStyleBackColor = true;
-            this.AmazonConsole.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             this.AmazonConsole.Click += new System.EventHandler(this.AmazonConsole_Click);
             // 
             // AmazonServer
@@ -81,7 +80,6 @@
             this.AmazonReplay.Text = "AmazonReplay";
             this.AmazonReplay.UseVisualStyleBackColor = true;
             this.AmazonReplay.Visible = false;
-            this.AmazonReplay.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             this.AmazonReplay.Click += new System.EventHandler(this.AmazonReplay_Click);
             // 
             // tabControlMain
@@ -109,7 +107,6 @@
             this.Screen.TabIndex = 0;
             this.Screen.Text = "Screen";
             this.Screen.UseVisualStyleBackColor = true;
-            this.Screen.Click += new System.EventHandler(this.Screen_Click);
             // 
             // Disco
             // 
@@ -120,7 +117,6 @@
             this.Disco.TabIndex = 1;
             this.Disco.Text = "Disco";
             this.Disco.UseVisualStyleBackColor = true;
-            this.Disco.Click += new System.EventHandler(this.Disco_Click);
             // 
             // Network
             // 
@@ -130,7 +126,6 @@
             this.Network.TabIndex = 2;
             this.Network.Text = "Network";
             this.Network.UseVisualStyleBackColor = true;
-            this.Network.Click += new System.EventHandler(this.Network_Click);
             // 
             // DataBase
             // 
@@ -149,7 +144,6 @@
             this.Assets.TabIndex = 4;
             this.Assets.Text = "Assets";
             this.Assets.UseVisualStyleBackColor = true;
-            this.Assets.Click += new System.EventHandler(this.Assets_Click);
             // 
             // Misilinious
             // 

@@ -33,14 +33,6 @@ namespace WindowsFormsApplication1
             this.ReadXmlFileUsingXDocument(strSection);  // file reading
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-           
-
-           // String strSection = "screen";
-           // this.ReadXmlFileUsingXDocument(strSection);  // file reading
-        }
-
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
             
@@ -153,31 +145,6 @@ namespace WindowsFormsApplication1
             }
 
 
-        }
-
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Screen_Click(object sender, EventArgs e)
-        {
-                
-        }
-
-        private void Disco_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Network_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Assets_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void AmazonConsole_Click(object sender, EventArgs e)
