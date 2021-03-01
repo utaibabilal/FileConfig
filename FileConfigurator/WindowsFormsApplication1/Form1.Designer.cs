@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.AmazonConsole = new System.Windows.Forms.RadioButton();
-            this.AmazonServer = new System.Windows.Forms.RadioButton();
-            this.AmazonReplay = new System.Windows.Forms.RadioButton();
             this.tabControlMain = new System.Windows.Forms.TabControl();
             this.Screen = new System.Windows.Forms.TabPage();
             this.Disco = new System.Windows.Forms.TabPage();
@@ -39,6 +37,9 @@
             this.Assets = new System.Windows.Forms.TabPage();
             this.Misilinious = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.tbValue = new System.Windows.Forms.TextBox();
+            this.tbTagName = new System.Windows.Forms.TextBox();
             this.tabControlMain.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,33 +55,6 @@
             this.AmazonConsole.Text = "AmazonConsole";
             this.AmazonConsole.UseVisualStyleBackColor = true;
             this.AmazonConsole.Click += new System.EventHandler(this.AmazonConsole_Click);
-            // 
-            // AmazonServer
-            // 
-            this.AmazonServer.AutoSize = true;
-            this.AmazonServer.Location = new System.Drawing.Point(121, 26);
-            this.AmazonServer.Name = "AmazonServer";
-            this.AmazonServer.Size = new System.Drawing.Size(94, 17);
-            this.AmazonServer.TabIndex = 1;
-            this.AmazonServer.TabStop = true;
-            this.AmazonServer.Text = "AmazonServer";
-            this.AmazonServer.UseVisualStyleBackColor = true;
-            this.AmazonServer.Visible = false;
-            this.AmazonServer.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
-            this.AmazonServer.Click += new System.EventHandler(this.AmazonServer_Click);
-            // 
-            // AmazonReplay
-            // 
-            this.AmazonReplay.AutoSize = true;
-            this.AmazonReplay.Location = new System.Drawing.Point(217, 26);
-            this.AmazonReplay.Name = "AmazonReplay";
-            this.AmazonReplay.Size = new System.Drawing.Size(96, 17);
-            this.AmazonReplay.TabIndex = 2;
-            this.AmazonReplay.TabStop = true;
-            this.AmazonReplay.Text = "AmazonReplay";
-            this.AmazonReplay.UseVisualStyleBackColor = true;
-            this.AmazonReplay.Visible = false;
-            this.AmazonReplay.Click += new System.EventHandler(this.AmazonReplay_Click);
             // 
             // tabControlMain
             // 
@@ -156,7 +130,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(650, 20);
+            this.button1.Location = new System.Drawing.Point(466, 20);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 4;
@@ -164,16 +138,41 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(723, 26);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "Add value";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // tbValue
+            // 
+            this.tbValue.Location = new System.Drawing.Point(816, 27);
+            this.tbValue.Name = "tbValue";
+            this.tbValue.Size = new System.Drawing.Size(100, 20);
+            this.tbValue.TabIndex = 6;
+            // 
+            // tbTagName
+            // 
+            this.tbTagName.Location = new System.Drawing.Point(925, 28);
+            this.tbTagName.Name = "tbTagName";
+            this.tbTagName.Size = new System.Drawing.Size(84, 20);
+            this.tbTagName.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(1031, 474);
+            this.Controls.Add(this.tbTagName);
+            this.Controls.Add(this.tbValue);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tabControlMain);
-            this.Controls.Add(this.AmazonReplay);
-            this.Controls.Add(this.AmazonServer);
             this.Controls.Add(this.AmazonConsole);
             this.Name = "Form1";
             this.Text = "File Configurator";
@@ -192,8 +191,6 @@
         #endregion
 
         private System.Windows.Forms.RadioButton AmazonConsole;
-        private System.Windows.Forms.RadioButton AmazonServer;
-        private System.Windows.Forms.RadioButton AmazonReplay;
         private System.Windows.Forms.TabPage Screen;
         private System.Windows.Forms.TabPage Disco;
         private System.Windows.Forms.TabPage Network;
@@ -202,6 +199,9 @@
         private System.Windows.Forms.TabPage Misilinious;
         public System.Windows.Forms.TabControl tabControlMain;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox tbValue;
+        private System.Windows.Forms.TextBox tbTagName;
     }
 }
 

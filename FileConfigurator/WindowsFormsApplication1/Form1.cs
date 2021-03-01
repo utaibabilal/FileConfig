@@ -265,6 +265,47 @@ namespace WindowsFormsApplication1
 
            path = path + "\\configFile.xml";
        }
+
+       private void button2_Click(object sender, EventArgs e)
+       {
+           tbValue.Text.ToString();
+           tbTagName.Text.ToString();
+           AddStation(tbValue.Text.ToString(), tbTagName.Text.ToString());
+       }
+
+
+       public void AddStation(String strStation , String strtag)
+       {    
+            
+            XmlElement station , parentNode;
+            XmlNode root;
+
+            XmlDocument doc = new XmlDocument();
+            XmlNamespaceManager namespaces = new XmlNamespaceManager(doc.NameTable);
+            namespaces.AddNamespace("ns", "urn:hl7-org:v3");
+            doc.Load("D:\\Amazonserver.xml");
+            XmlNode idNode = doc.SelectSingleNode("/office/" + strtag, namespaces);
+
+            if (idNode != null)
+            {
+                station = doc.CreateElement(strStation);
+                idNode.AppendChild(station);
+            }
+
+            else
+            {
+                root = doc.DocumentElement;
+                parentNode = doc.CreateElement(strtag);
+                root.AppendChild(parentNode);
+                
+                station = doc.CreateElement(strStation);
+                parentNode.AppendChild(station);
+
+            }
+
+            doc.Save(@"D:\\Amazonserver.xml");
+
+       }
         
     }
 }
