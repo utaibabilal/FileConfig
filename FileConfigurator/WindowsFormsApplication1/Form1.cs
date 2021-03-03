@@ -306,6 +306,21 @@ namespace WindowsFormsApplication1
             doc.Save(@"D:\\Amazonserver.xml");
 
        }
+
+       private void btnImg_Click(object sender, EventArgs e)
+       {
+           string path = Environment.CurrentDirectory.ToString();
+
+           path = path.Replace("\\bin\\Debug", "");
+
+           path = path + "\\Archive\\Icon\\file.ico";
+           btnImg.Image = Image.FromFile(@path);
+           // Align the image and text on the button.
+           btnImg.ImageAlign = ContentAlignment.MiddleCenter;
+           btnImg.TextAlign = ContentAlignment.MiddleCenter;
+           // Give the button a flat appearance.
+           
+       }
         
     }
 }

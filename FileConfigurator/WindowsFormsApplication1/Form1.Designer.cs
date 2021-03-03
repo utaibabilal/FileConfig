@@ -40,6 +40,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.tbValue = new System.Windows.Forms.TextBox();
             this.tbTagName = new System.Windows.Forms.TextBox();
+            this.btnImg = new System.Windows.Forms.Button();
             this.tabControlMain.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -130,7 +131,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(466, 20);
+            this.button1.Location = new System.Drawing.Point(642, 28);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 4;
@@ -140,7 +141,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(723, 26);
+            this.button2.Location = new System.Drawing.Point(723, 27);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 5;
@@ -162,12 +163,22 @@
             this.tbTagName.Size = new System.Drawing.Size(84, 20);
             this.tbTagName.TabIndex = 7;
             // 
+            // btnImg
+            // 
+            this.btnImg.Location = new System.Drawing.Point(459, 27);
+            this.btnImg.Name = "btnImg";
+            this.btnImg.Size = new System.Drawing.Size(35, 23);
+            this.btnImg.TabIndex = 8;
+            this.btnImg.UseVisualStyleBackColor = true;
+            this.btnImg.Click += new System.EventHandler(this.btnImg_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(1031, 474);
+            this.Controls.Add(this.btnImg);
             this.Controls.Add(this.tbTagName);
             this.Controls.Add(this.tbValue);
             this.Controls.Add(this.button2);
@@ -202,6 +213,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox tbValue;
         private System.Windows.Forms.TextBox tbTagName;
+        private System.Windows.Forms.Button btnImg;
     }
 }
 
