@@ -1,0 +1,1 @@
+copy the "Amazonserver " to D drive to run this code
