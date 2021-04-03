@@ -84,7 +84,7 @@ namespace WindowsFormsApplication1
                {
                   string str =  childNode.Name.ToString();
 
-                  if (str == "view2")
+                  if (str == "view3")
                   {
                       desiredNode = childNode;
                   }
@@ -257,7 +257,7 @@ namespace WindowsFormsApplication1
             GetDynamicFile();
         }
 
-       public void  GetDynamicFile()
+       public void  GetDynamicFile()  // rizwan     //lastwork
        {
            string path = Environment.CurrentDirectory.ToString();
 
@@ -268,9 +268,9 @@ namespace WindowsFormsApplication1
 
        private void button2_Click(object sender, EventArgs e)
        {
-           tbValue.Text.ToString();
-           tbTagName.Text.ToString();
-           AddStation(tbValue.Text.ToString(), tbTagName.Text.ToString());
+          // tbValue.Text.ToString().ToUpper();
+          // tbTagName.Text.ToString().ToUpper();
+           AddStation(tbValue.Text.ToString().ToUpper(), tbTagName.Text.ToString().ToUpper());  // rizwan
        }
 
 
@@ -307,13 +307,13 @@ namespace WindowsFormsApplication1
 
        }
 
-       private void btnImg_Click(object sender, EventArgs e)
+       private void btnImg_Click(object sender, EventArgs e)   // rizwan  display of folder icon on button
        {
            string path = Environment.CurrentDirectory.ToString();
 
            path = path.Replace("\\bin\\Debug", "");
 
-           path = path + "\\Archive\\Icon\\file.ico";
+           path = path + "\\Archive\\Icon\\file.ico";    // make this path and add the folder icon
            btnImg.Image = Image.FromFile(@path);
            // Align the image and text on the button.
            btnImg.ImageAlign = ContentAlignment.MiddleCenter;

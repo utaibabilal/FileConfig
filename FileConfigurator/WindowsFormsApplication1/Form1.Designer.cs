@@ -41,7 +41,11 @@
             this.tbValue = new System.Windows.Forms.TextBox();
             this.tbTagName = new System.Windows.Forms.TextBox();
             this.btnImg = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.tabControlMain.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // AmazonConsole
@@ -131,7 +135,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(642, 28);
+            this.button1.Location = new System.Drawing.Point(178, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 4;
@@ -141,9 +145,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(723, 27);
+            this.button2.Location = new System.Drawing.Point(108, 17);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(54, 23);
             this.button2.TabIndex = 5;
             this.button2.Text = "Add value";
             this.button2.UseVisualStyleBackColor = true;
@@ -151,26 +155,57 @@
             // 
             // tbValue
             // 
-            this.tbValue.Location = new System.Drawing.Point(816, 27);
+            this.tbValue.Location = new System.Drawing.Point(432, 19);
             this.tbValue.Name = "tbValue";
-            this.tbValue.Size = new System.Drawing.Size(100, 20);
+            this.tbValue.Size = new System.Drawing.Size(79, 20);
             this.tbValue.TabIndex = 6;
             // 
             // tbTagName
             // 
-            this.tbTagName.Location = new System.Drawing.Point(925, 28);
+            this.tbTagName.Location = new System.Drawing.Point(277, 20);
             this.tbTagName.Name = "tbTagName";
-            this.tbTagName.Size = new System.Drawing.Size(84, 20);
+            this.tbTagName.Size = new System.Drawing.Size(63, 20);
             this.tbTagName.TabIndex = 7;
             // 
             // btnImg
             // 
-            this.btnImg.Location = new System.Drawing.Point(459, 27);
+            this.btnImg.Location = new System.Drawing.Point(380, 28);
             this.btnImg.Name = "btnImg";
             this.btnImg.Size = new System.Drawing.Size(35, 23);
             this.btnImg.TabIndex = 8;
             this.btnImg.UseVisualStyleBackColor = true;
             this.btnImg.Click += new System.EventHandler(this.btnImg_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.tbTagName);
+            this.groupBox1.Controls.Add(this.tbValue);
+            this.groupBox1.Location = new System.Drawing.Point(460, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(541, 48);
+            this.groupBox1.TabIndex = 9;
+            this.groupBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(233, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(26, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "App";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(376, 21);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "station";
             // 
             // Form1
             // 
@@ -178,10 +213,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(1031, 474);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnImg);
-            this.Controls.Add(this.tbTagName);
-            this.Controls.Add(this.tbValue);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tabControlMain);
             this.Controls.Add(this.AmazonConsole);
@@ -189,6 +222,8 @@
             this.Text = "File Configurator";
             this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.tabControlMain.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -214,6 +249,9 @@
         private System.Windows.Forms.TextBox tbValue;
         private System.Windows.Forms.TextBox tbTagName;
         private System.Windows.Forms.Button btnImg;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
 
